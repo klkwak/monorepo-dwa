@@ -1,0 +1,37 @@
+main {
+  height: 100%;
+}
+
+.spotify-button {
+  background-color: rgb(140, 214, 140);
+  border: 0;
+  border-radius: 20px;
+  padding: 10px;
+  transition: all 0.2s;
+  text-decoration: none;
+  color: black;
+}
+
+.spotify-button:hover {
+  background-color: rgb(111, 172, 111);
+  color: white;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
